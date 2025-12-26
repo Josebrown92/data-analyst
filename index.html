@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Analyst | Turning Data into Decisions</title>
+  <meta name="description" content="Professional data analyst specializing in SQL, Python, and data visualization to turn complex data into actionable insights." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #121833;
+      --accent: #6ee7ff;
+      --accent-2: #a78bfa;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1b2250, transparent 40%), var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 32px 20px; }
+    .nav { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-weight: 800; letter-spacing: .5px; }
+    .cta { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #020617; padding: 10px 16px; border-radius: 12px; font-weight: 700; }
+    .hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; padding: 56px 0; }
+    .badge { display: inline-flex; gap: 8px; align-items: center; background: rgba(110,231,255,.12); color: var(--accent); padding: 6px 12px; border-radius: 999px; font-weight: 600; }
+    h1 { font-size: clamp(36px, 5vw, 56px); line-height: 1.05; margin: 14px 0; }
+    .lead { color: var(--muted); font-size: 18px; }
+    .hero-actions { display: flex; gap: 12px; margin-top: 18px; }
+    .btn { padding: 12px 18px; border-radius: 14px; border: 1px solid #2a3170; background: #0f1638; }
+    .btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #020617; border: none; font-weight: 800; }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.04), transparent 40%), var(--card); border: 1px solid #1f2560; border-radius: 20px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+    .stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 18px; }
+    .stat b { font-size: 28px; }
+    .section { padding: 48px 0; }
+    .grid { display: grid; gap: 18px; }
+    .grid-3 { grid-template-columns: repeat(3,1fr); }
+    .pill { display: inline-block; background: #0f1638; border: 1px solid #2a3170; padding: 6px 10px; border-radius: 999px; margin: 6px 6px 0 0; }
+    .project { display: flex; flex-direction: column; gap: 8px; }
+    footer { border-top: 1px solid #1f2560; padding: 28px 0; color: var(--muted); }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="container nav">
+    <div class="logo">DA<span style="color:var(--accent)">.</span></div>
+    <a class="cta" href="#contact">Hire Me</a>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="badge">📊 Data Analyst</span>
+        <h1>Turning data into clear, confident decisions</h1>
+        <p class="lead">I help teams uncover insights with SQL, Python, and compelling dashboards—so you can act faster and smarter.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Get in Touch</a>
+        </div>
+        <div class="stats">
+          <div class="card stat"><b>1+ yrs</b><div class="muted">Experience</div></div>
+          <div class="card stat"><b>10+</b><div class="muted">Dashboards</div></div>
+          <div class="card stat"><b>10M+</b><div class="muted">Rows Analyzed</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>What I Do</h3>
+        <ul class="muted">
+          <li>📊 Build Analytics-Ready Products</li>
+          <li>🔍 Turn Data Into Decisions</li>
+          <li>⚙️ Develop Scalable Full-Stack Solutions</li>
+          <li>🤖 Integrate AI Where It Adds Value</li>
+          <li>📈 Design Dashboards & Data Pipelines</li>
+          <li>🎯 Optimize Products Through Evidence</li>
+          <li>🤝 Collaborate Across Product, Data & Engineering</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="card">
+        <span class="pill">SQL</span><span class="pill">Python</span><span class="pill">Pandas</span><span class="pill">NumPy</span>
+        <span class="pill">IBM Whatson Studio</span><span class="pill">Power BI</span><span class="pill">Excel</span><span class="pill">Statistics</span>
+        <span class="pill">A/B Testing</span><span class="pill">Data Modeling</span><span class="pill">ETL</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Selected Projects</h2>
+      <div class="grid grid-3">
+        <div class="card project">
+          <h4>Revenue Forecasting</h4>
+          <p class="muted">Built a time-series model to forecast monthly revenue with ±6% MAPE.</p>
+          <span class="pill">Python</span><span class="pill">ARIMA</span>
+        </div>
+        <div class="card project">
+          <h4>Marketing Funnel Dashboard</h4>
+          <p class="muted">End-to-end SQL pipeline powering a live Power BI dashboard.</p>
+          <span class="pill">SQL</span><span class="pill">Power BI</span>
+        </div>
+        <div class="card project">
+          <h4>Product Experimentation</h4>
+          <p class="muted">Designed A/B tests and communicated lift with clear visuals.</p>
+          <span class="pill">Statistics</span><span class="pill">Tableau</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="card">
+        <h2>Let’s Work Together</h2>
+        <p class="muted">Email me at <b>joforge19@gmail.com</b> or connect on LinkedIn.</p>
+        <a class="btn primary" href="mailto:joforge19@gmail.com">Email Me</a>
+        <a class="btn primary" href="url:www.linkedin.com/in/joseph-njoroge-problemsolver">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div>© 2025 Joseph Njoroge — Data Analyst</div>
+  </footer>
+</body>
+</html>
